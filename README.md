@@ -2,6 +2,9 @@
 
 A lightweight, custom multithreaded HTTP/1.1 web server built from scratch in Java using `ServerSocket` and multi-threading. It handles concurrent client requests, serves static assets, supports custom GET/POST API endpoints, and is ready for Docker deployment.
 
+## Architecture
+![Architecture Diagram](architecture.png)
+
 ## Features
 - **Multithreaded Architecture:** Handles multiple concurrent client connections efficiently using Java Threads.
 - **Static File Serving:** Serves HTML pages, images (`.jpg`), and custom error pages (`404.html`, `500.html`).
