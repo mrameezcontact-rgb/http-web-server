@@ -1,10 +1,5 @@
 # Multithreaded HTTP/1.1 Web Server in Java
 
-![Java](https://shields.io)
-![Maven](https://shields.io)
-![Docker](https://shields.io)
-![License](https://shields.io)
-
 A lightweight, high-performance, custom multithreaded HTTP/1.1 web server built completely from scratch in pure Java using `ServerSocket` and concurrent `Thread` handling—without relying on heavy external frameworks like Spring Boot or Tomcat. 
 
 This project demonstrates low-level socket programming, raw HTTP request parsing, dynamic endpoint routing, static asset delivery, and multi-stage Docker containerization.
