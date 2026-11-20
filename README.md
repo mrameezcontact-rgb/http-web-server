@@ -12,7 +12,7 @@ This project demonstrates low-level socket programming, raw HTTP request parsing
 ---
 
 ## System Architecture
-![Architecture Diagram](Architecture.png)
+![Architecture Diagram](architecture.png)
 
 ### How a Request Flows Through the Server:
 1. **Connection Acceptance:** `Server.java` listens continuously on port `8888` using a `ServerSocket`.
