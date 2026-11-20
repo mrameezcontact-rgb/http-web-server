@@ -1,5 +1,6 @@
 # Multithreaded HTTP/1.1 Web Server in Java
 
+
 A lightweight, high-performance, custom multithreaded HTTP/1.1 web server built completely from scratch in pure Java using `ServerSocket` and concurrent `Thread` handling—without relying on heavy external frameworks like Spring Boot or Tomcat. 
 
 This project demonstrates low-level socket programming, raw HTTP request parsing, dynamic endpoint routing, static asset delivery, and multi-stage Docker containerization.
@@ -7,7 +8,7 @@ This project demonstrates low-level socket programming, raw HTTP request parsing
 ---
 
 ## System Architecture
-![Architecture Diagram](architecture.png)
+![Architecture Diagram](Architecture.png)
 
 ### How a Request Flows Through the Server:
 1. **Connection Acceptance:** `Server.java` listens continuously on port `8888` using a `ServerSocket`.
@@ -78,6 +79,7 @@ http-web-server/
  ├── Dockerfile                                     # Multi-stage Docker build configuration
  ├── pom.xml                                        # Maven project configuration
  ├── post_data.txt                                  # Stores submitted POST form data
+ ├── Architecture.png                               # System architecture diagram
  └── README.md                                      # Project documentation
 ```
 
@@ -146,14 +148,6 @@ To execute the JUnit test suite (`HttpServerGetTest`):
 ```bash
 mvn test
 ```
-
----
-
-## Future Roadmap
-- [ ] Implement a fixed `ExecutorService` Thread Pool to prevent thread exhaustion under heavy traffic.
-- [ ] Add support for HTTP `Keep-Alive` persistent connections.
-- [ ] Implement GZIP response compression for faster static file delivery.
-- [ ] Add `multipart/form-data` support for file uploads.
 
 ---
 
